@@ -1,0 +1,132 @@
+:root{
+    --color-lightgrey: #ededed;
+    --color-mediumgrey: #777777;
+    --color-darkgrey: #444444;
+    --color-blue: #0011bb;
+    --color-purple: #6600cc;
+    font-size: 12px;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    color: var(--color-darkgrey);
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    color: var(--color-blue);
+}
+
+a:visited{
+    color: var(--color-purple);
+}
+
+header{
+    background-color: var(--color-lightgrey);
+    color: var(--color-mediumgrey);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: auto;
+}
+
+header > div {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > div > *{
+    vertical-align: middle;
+}
+
+header div.header-title{
+    flex-grow: 1;
+}
+
+header div.header-title h1{
+    margin: 0;
+}
+
+header div.header-logo img{
+    max-width: 50px;
+    display: inline-block;
+}
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.label{
+    font-weight: bold;
+}
+
+/*table list of earthquakes*/
+.feature-list-page h2{
+    text-align: center;
+}
+.feature-list{
+    display: table;
+    width: 100%;
+}
+
+.feature-list-row {
+    display: table-row;
+    width: auto;
+}
+
+.feature-list-header div{
+    cursor: pointer;
+}
+
+.feature-list-row div {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+    padding: 2.5px;
+}
+
+.feature-list-row div.title:not(.list-title){
+    text-align: left;
+}
+
+/*Detail page*/
+
+.dertail-row {
+    display: flex;
+    padding-bottom: 2px;
+}
+
+
+.dertail-row .label {
+    width: 20%;
+}
+
+/*profile page*/
+.profile-page h2 {
+    text-align: center;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-image img {
+    max-width: 100px;
+    margin: 5px;
+}
+
+.profile-info-row {
+    display: flex;
+    padding: .25rem
+}
+.profile-info-row div {
+  width: 70%;
+}
+.profile-info-row .label{
+    width: 30%;
+}
